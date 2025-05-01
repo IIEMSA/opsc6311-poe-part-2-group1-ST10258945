@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Home Screen Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home Screen"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingBottom="24dp" />
+
+        <!-- Add Expense Button -->
+        <Button
+            android:layout_marginTop="12dp"
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="@android:color/white"
+            android:id="@+id/btnAddExpense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Expense"
+            android:padding="16dp" />
+
+        <!-- View Summary Button -->
+        <Button
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="@android:color/white"
+            android:id="@+id/btnViewSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Summary"
+            android:padding="16dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Monthly Goal Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Monthly Goals"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="32dp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:layout_marginTop="12dp"
+            android:background="@android:drawable/edit_text"
+            android:id="@+id/minGoalEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter minimum goal"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:layout_marginTop="12dp"
+            android:background="@android:drawable/edit_text"
+            android:id="@+id/maxGoalEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter maximum goal"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:layout_marginTop="12dp"
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="@android:color/white"
+            android:id="@+id/saveGoalButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Goal"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/goalPreviewText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No goal set yet."
+            android:layout_marginTop="16dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
