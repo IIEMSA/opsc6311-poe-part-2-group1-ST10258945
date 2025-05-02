@@ -1,6 +1,5 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/K7Dk3ZKR)
 
-@⁨Kyle⁩ can you please add this In the ReadMe file in GitHub real quick.📱 BudgetTrackerApp – README
 🔍 Overview
 BudgetTrackerApp is an Android application developed to help users manage and track their personal expenses efficiently. It allows users to log expenses, set monthly budget goals, and review summaries with category-wise insights and attached photos.
 
