@@ -62,6 +62,7 @@ Saved goals are stored using RoomDB and used for tracking against actual spendin
 
 Useful for monitoring if user is staying within their budget.
 
+
 🛠 Technologies Used
 Kotlin for logic and UI interactions
 
@@ -72,6 +73,7 @@ RoomDB for local data persistence
 CardView and RecyclerView for clean UI presentation
 
 Image picker for optional photo attachment
+
 
 🗃 Project Structure
 LoginFragment.kt – Login logic
@@ -86,6 +88,7 @@ GoalEntity, GoalDao, AppDatabase – RoomDB setup for goals and expenses
 
 activity_main.xml, nav_graph.xml, and fragment layouts – UI
 
+
 💾 Data Storage
 Uses Room Database to store:
 
@@ -97,12 +100,15 @@ Budget goals
 
 Data persists locally across app restarts.
 
+
 📷 Photo Attachment
 Users can attach a photo from local device storage.
 
 Photos are displayed with expenses in the summary screen.
 
 Supports common image types like JPG, PNG.
+
+
 
 💡 Usage Example
 User logs in.
