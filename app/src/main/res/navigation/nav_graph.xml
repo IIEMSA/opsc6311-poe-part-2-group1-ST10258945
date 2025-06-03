@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/loginFragment">
 
@@ -23,6 +24,9 @@
         <action
             android:id="@+id/action_homeFragment_to_summaryFragment"
             app:destination="@id/summaryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_budgetGraphFragment"
+            app:destination="@id/budgetGraphFragment" />
     </fragment>
 
     <fragment
@@ -37,9 +41,28 @@
     <fragment
         android:id="@+id/summaryFragment"
         android:name="vcmsa.projects.budgettrackerapp.ui.SummaryFragment"
-        android:label="Summary" />
+        android:label="Summary">
+        <action
+            android:id="@+id/action_summaryFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 
+    <fragment
+        android:id="@+id/budgetGraphFragment"
+        android:name="vcmsa.projects.budgettrackerapp.ui.BudgetGraphFragment"
+        android:label="Budget Graph"
+        tools:layout="@layout/fragment_budget_graph" />
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="vcmsa.projects.budgettrackerapp.ui.SearchFragment"
+        android:label="Search Expenses" >
+    </fragment>
+
+    <!-- Link from Home -->
     <action
-        android:id="@+id/action_summaryFragment_to_homeFragment"
-        app:destination="@id/homeFragment" />
+        android:id="@+id/action_homeFragment_to_searchFragment"
+        app:destination="@id/searchFragment" />
+
+
 </navigation>

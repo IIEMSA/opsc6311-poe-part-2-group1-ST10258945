@@ -1,5 +1,6 @@
 package vcmsa.projects.budgettrackerapp.ui
 
+import android.annotation.SuppressLint
 import android.app.DatePickerDialog
 import android.os.Bundle
 import android.view.*
@@ -133,6 +134,7 @@ class SummaryFragment : Fragment() {
         }
     }
 
+    @SuppressLint("SetTextI18n")
     private fun calculateCategoryTotal(category: String?) {
         expenseViewModel.allExpenses.value?.let { expenses ->
             val filteredByCategory = expenses.filter { it.category == category }
@@ -141,6 +143,7 @@ class SummaryFragment : Fragment() {
         }
     }
 
+    @SuppressLint("SetTextI18n")
     private fun updateDateRangeText() {
         val start = formatDate(startDate)
         val end = formatDate(endDate)

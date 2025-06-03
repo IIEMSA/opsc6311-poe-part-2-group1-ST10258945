@@ -11,7 +11,7 @@
         android:orientation="vertical"
         android:gravity="center_horizontal">
 
-        <!-- Home Screen Title -->
+        <!-- Title -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -20,29 +20,40 @@
             android:textStyle="bold"
             android:paddingBottom="24dp" />
 
-        <!-- Add Expense Button -->
+        <!-- Add Expense -->
         <Button
-            android:layout_marginTop="12dp"
-            android:backgroundTint="?attr/colorPrimary"
-            android:textColor="@android:color/white"
             android:id="@+id/btnAddExpense"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:text="Add Expense"
-            android:padding="16dp" />
-
-        <!-- View Summary Button -->
-        <Button
             android:backgroundTint="?attr/colorPrimary"
             android:textColor="@android:color/white"
-            android:id="@+id/btnViewSummary"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="View Summary"
-            android:padding="16dp"
-            android:layout_marginTop="16dp" />
+            android:padding="12dp" />
 
-        <!-- Monthly Goal Section -->
+        <!-- View Summary -->
+        <Button
+            android:id="@+id/btnViewSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="View Summary"
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="@android:color/white"
+            android:padding="12dp" />
+
+        <!-- View Budget Graph -->
+        <Button
+            android:id="@+id/btnViewBudgetGraph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="View Budget Graph"
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="@android:color/white"
+            android:padding="12dp" />
+
+        <!-- Goal Section -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -52,9 +63,8 @@
             android:layout_marginTop="32dp"
             android:paddingBottom="8dp" />
 
+        <!-- Min Goal -->
         <EditText
-            android:layout_marginTop="12dp"
-            android:background="@android:drawable/edit_text"
             android:id="@+id/minGoalEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,9 +73,8 @@
             android:padding="12dp"
             android:layout_marginBottom="8dp" />
 
+        <!-- Max Goal -->
         <EditText
-            android:layout_marginTop="12dp"
-            android:background="@android:drawable/edit_text"
             android:id="@+id/maxGoalEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -74,23 +83,48 @@
             android:padding="12dp"
             android:layout_marginBottom="16dp" />
 
+        <!-- Save Goal -->
         <Button
-            android:layout_marginTop="12dp"
-            android:backgroundTint="?attr/colorPrimary"
-            android:textColor="@android:color/white"
             android:id="@+id/saveGoalButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Save Goal"
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="@android:color/white"
             android:padding="12dp" />
 
+        <!-- Goal Preview -->
         <TextView
             android:id="@+id/goalPreviewText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="No goal set yet."
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This month:"
+            android:textSize="16sp"
             android:layout_marginTop="16dp"
-            android:textSize="16sp" />
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/dailySpendingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spent today: --"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnSearchExpenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search Expenses" />
 
     </LinearLayout>
 </ScrollView>

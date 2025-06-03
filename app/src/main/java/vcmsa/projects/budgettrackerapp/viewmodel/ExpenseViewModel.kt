@@ -19,5 +19,6 @@ class ExpenseViewModel(application: Application) : AndroidViewModel(application)
         viewModelScope.launch(Dispatchers.IO) {
             expenseDao.insertExpense(expense)
         }
+
     }
 }

@@ -12,4 +12,9 @@ interface ExpenseDao {
     @Query("SELECT * FROM expenses ORDER BY id DESC")
     fun getAllExpenses(): LiveData<List<Expense>>
 
+    @Query("SELECT * FROM expenses ORDER BY id DESC")
+    suspend fun getAllExpensesOnce(): List<Expense>
+
+    @Query("SELECT * FROM expenses WHERE description LIKE '%' || :keyword || '%'")
+    suspend fun searchExpensesByKeyword(keyword: String): List<Expense>
 }
